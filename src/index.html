@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mobile Web App Project</title>
+    <link rel="stylesheet" href="style/default.css">
+    <script src="import/pixel.js" defer></script>
+    <script src="import/main.js" defer></script>
+</head>
+
+<body>
+    <div id="menue">
+        <table>
+            <col width="33%">
+            <tr>
+                <td>Tracked color</td>
+                <td>
+                    <input id="slider_color" value="#ff0000" type="color" onchange="slider_color_changed(this.value)" />
+                </td>
+                <td id="cell_color">Red</td>
+            </tr>
+            <tr>
+                <td>Light sensitivity</td>
+                <td><input id="slider_light" value="1.0" type="range" min="0.1" max="2.0" step="0.1" onchange="slider_light_changed(this.value)"
+                    /></td>
+                <td id="cell_lightvalue"></td>
+            </tr>
+            <tr>
+                <td>Shadow sensitivity</td>
+                <td>
+                    </label><input id="slider_shadow" value="1.0" type="range" min="0.1" max="2.0" step="0.1" onchange="slider_shadow_changed(this.value)"
+                    /></td>
+                <td id="cell_shadowvalue"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="content"></div>
+</body>
+
+</html>
